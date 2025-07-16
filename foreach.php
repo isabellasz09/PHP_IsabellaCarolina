@@ -6,12 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-<?php
-    $name = "Xenia";
-    $name = null;
-    if (isset($name)) 
-    print "Está linha está sendo impressa porque a variavel name possui um valor.\n"
-    
-?>
+    <?php
+    $cores = array("Amarelo","Vermelho","Verde","Azul");
+    foreach($cores as $cor){
+        echo $cor."<br/>";
+    }
+    ?>
 </body>
 </html>
