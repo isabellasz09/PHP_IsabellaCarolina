@@ -53,14 +53,14 @@
                     <th>CEP:</th>
                     <th><input name= "cliente_CEP" type="text" onkeypress="mascara(this,cep)" maxlength="10"></th>
 
-
+                </tr>
             </table>
         </form>
     </fieldset>
     <div>
         <tr>
             <td class="botao">
-                <input class="btn 1" type="submit" onclick="return validar" value="Enviar">
+                <input class="btn 1" type="submit" onclick="return valida" value="Enviar">
                 <input class="btn 2" type="button" value="Cancelar">
             </td>
         </tr>
