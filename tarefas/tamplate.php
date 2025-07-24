@@ -6,8 +6,7 @@
     <title>Gerenciador de Tarefas</title>
 </head>
 <body>
-    <h1>Gerenciador de Tarefas</h1>
-    <!-- Aqui irá o restante dos códigos... -->
+    <h1>Gerenciador de Tarefas</h1>     
     <form action="" method="">
         <fieldset>
             <legend>Nova Tarefa</legend>
@@ -41,6 +40,7 @@
                     <input type="radio" name="prioridade" value="alta" />
                     Alta
                 </label>
+                <br>
             </fieldset>
 
             <label>
@@ -55,12 +55,20 @@
     <table>
         <tr>
             <th>Tarefas</th>
+            <th>Descricao</th>
+            <th>Prazo</th>
+            <th>Prioridade</th>
+            <th>ConcluÍda</th>
         </tr>
 
         <?php foreach ($lista_tarefas as $tarefa) : ?>
 
         <tr>
-            <td><?php echo $tarefa; ?></td>
+            <td><?php echo $tarefa['nome']; ?></td>
+            <td><?php echo $tarefa['descricao']; ?></td>
+            <td><?php echo $tarefa['prazo']; ?></td>
+            <td><?php echo $tarefa['prioridade']; ?></td>
+            <td><?php echo $tarefa['concluida']; ?></td>
         </tr>
         <?php endforeach; ?>
     </table>
