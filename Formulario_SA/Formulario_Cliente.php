@@ -11,7 +11,7 @@
 
 <body class="tudo">
     <fieldset>
-        <form>
+        <form action="backCliente.php" method="GET">
             <table>
 
                 <tr>
@@ -55,16 +55,16 @@
 
                 </tr>
             </table>
-        </form>
-    </fieldset>
-    <div>
-        <tr>
-            <td class="botao">
-                <input class="btn 1" type="submit" onclick="return valida" value="Enviar">
-                <input class="btn 2" type="button" value="Cancelar">
-            </td>
-        </tr>
-    </div>
+        </fieldset>
+        <div>
+            <tr>
+                <td class="botao">
+                    <input class="btn 1" type="submit" onclick="return valida" value="Enviar">
+                    <input class="btn 2" type="button" value="Cancelar">
+                </td>
+            </tr>
+        </div>
+    </form>
     <br><br>
     <address>
         Isabella de Souza - Estudante - Tecnico - Desenvolvimento de Sistemas

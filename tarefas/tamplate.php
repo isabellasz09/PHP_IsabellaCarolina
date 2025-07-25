@@ -6,7 +6,7 @@
     <title>Gerenciador de Tarefas</title>
 </head>
 <body>
-    <h1>Gerenciador de Tarefas</h1>     
+    <h1>Gerenciador de Tarefas</h1>    
     <form action="" method="">
         <fieldset>
             <legend>Nova Tarefa</legend>
@@ -16,7 +16,7 @@
                 <input type="text" name="nome">
                 <br>
             </label>
-            
+           
             <label>
                 Descrição (Opcional):
                 <br>
@@ -43,14 +43,17 @@
                 <br>
             </fieldset>
 
+
             <label>
                 Tarefa concluída:
                 <input type="checkbox" name="concluida" value="sim"/>
             </label>
 
+
             <input type="submit" value="Cadastrar">
         </fieldset>
     </form>
+
 
     <table>
         <tr>
@@ -61,7 +64,9 @@
             <th>ConcluÍda</th>
         </tr>
 
+
         <?php foreach ($lista_tarefas as $tarefa) : ?>
+
 
         <tr>
             <td><?php echo $tarefa['nome']; ?></td>
@@ -74,3 +79,5 @@
     </table>
 </body>
 </html>
+
+
