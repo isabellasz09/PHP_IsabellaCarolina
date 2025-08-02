@@ -12,6 +12,7 @@ function conectarBanco() {
     
     } catch (PDOException $e) {
         error_log("Erro ao conectar ao banco:". $e->getMessage());
+        // LOG SEM EXPOR ERRO AO USUARIO
         die("ERRO ao conectar ao banco.");
     }
 }

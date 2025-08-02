@@ -6,10 +6,21 @@ $busca = $_GET['busca']?? "";
 
 if(!$busca){
     ?>
-<form action="pesquisarCliente.php" method="GET">
-    <label for="busca">Digite o ID ou Nome:</label>
-    <input type="text" id="busca" name="busca" required>
-    <button type="submit">Pesquisar</button>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylessheet" href="stylepesquisa.css">
+    
+    <form class="form-inline">
+  <div class="form-group mb-2">
+    <label for="staticEmail2" class="sr-only">Email</label>
+    <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@exemplo.com">
+  </div>
+  <div class="form-group mx-sm-3 mb-2">
+    <label for="inputPassword2" class="sr-only">Senha</label>
+    <input type="password" class="form-control" id="inputPassword2" placeholder="Senha">
+  </div>
+  <button type="submit" class="btn btn-primary mb-2">Confirmar identidade</button>
+</form>
 </form>
 <?php
 exit;
