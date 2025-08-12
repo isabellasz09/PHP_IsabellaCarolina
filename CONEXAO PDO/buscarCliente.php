@@ -46,6 +46,6 @@
             </tr>
             <?php endforeach; ?>
     </table>
-
+    <?php include("dropdown.php"); ?>
 </body>
 </html>

@@ -37,6 +37,7 @@ if ($idCliente && is_numeric($idCliente)) {
     </script>
 </head>
 <body class="bg-light">
+<?php include("dropdown.php"); ?>
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-7">
@@ -94,7 +95,7 @@ if ($idCliente && is_numeric($idCliente)) {
             </div>
         </div>
     </div>
-
+    
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
