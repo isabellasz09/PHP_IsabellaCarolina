@@ -1,0 +1,24 @@
+body {
+    padding-top: 70px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: .3px;
+}
+
+.table thead th {
+    white-space: nowrap;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.container-narrow {
+    max-width: 880px;
+}
+
+small.help {
+    color: #6c757d;
+}
